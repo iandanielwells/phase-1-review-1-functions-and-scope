@@ -1,5 +1,7 @@
 // Deliverable # 1 - Write the code to declare a function named "sum" that adds two numbers together.
-
+function sum (num1, num2) {
+    return num1+num2
+} 
 /*
  * Your code goes here
  */
