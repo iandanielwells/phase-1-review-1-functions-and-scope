@@ -1,4 +1,15 @@
+console.log("Testing 1 2 3")
+
+
 // Deliverable # 1 - Write the code to declare a function named "sum" that adds two numbers together.
+function sum (num1, num2) {
+    return num1+num2
+} 
+
+function multiply (num3, num4) {
+    return num3*num4
+}
+
 
 /*
  * Your code goes here
@@ -6,6 +17,8 @@
 
 // Deliverable # 2 - Write the code to invoke (call) your "sum" function.
 
+console.log(sum(1,2))
+console.log(multiply(4,5))
 /*
  * Your code goes here
  */
@@ -27,7 +40,7 @@ console.log("Time is up!")
 // Exercise # 2 - Function Scope: What happens when you try to console log the value of "iceCreamFlavor" inside the "createIceCream" function vs outside of the function?
 let iceCreamFlavor = "Strawberry"
 function createIceCream(iceCreamFlavor){
-    // Print out the value of the "iceCreamFlavor" variable here using console.log(), and notice what happens in the console.
+   console.log(iceCreamFlavor) // Print out the value of the "iceCreamFlavor" variable here using console.log(), and notice what happens in the console.
 }
 createIceCream("Matcha")
 // Print out the value of the "iceCreamFlavor" variable here using console.log(), and notice what happens in the console.
@@ -38,6 +51,8 @@ function changePasta(){
     pasta = "Linguini"
 }
 changePasta()
+
+console.log(pasta)
 // What will the value of "pasta" be now? Print out the value of the "pasta" variable using console.log() and find out!
 
 /* Deliverable # 3:
@@ -46,6 +61,16 @@ changePasta()
  * Step 3 - Inside of the "guacamoleMaker" function, invoke the "mixIngredients" function. On the following line, print the string "All done!" to the console.
  * Step 4 - Invoke the "guacamoleMaker" function: Make sure to pass in the "mixIngredients" function as an argument of the "guacamoleMaker" function.
  */
+
+function mixIngredients() {
+    console.log("Mixing Ingredients")
+}
+
+function guacamoleMaker(mixIngredients) {
+    mixIngredients()
+}
+
+guacamoleMaker(mixIngredients)
 
 /*
  * Your code goes here
@@ -57,6 +82,16 @@ changePasta()
  * Step 3 - The return value of the "playASport" function should be the "playSoccer" function. Thus making "playASport" a function that returns another function.
  * Step 4 - Invoke the "playASport" function.
  */
+
+function playSoccer() {
+    console.log("GOAL!!!")
+}
+
+function playASport(playSoccer) {
+    playSoccer()
+}
+
+playASport(playSoccer)
 
 /*
  * Your code goes here
