@@ -68,6 +68,7 @@ function mixIngredients() {
 
 function guacamoleMaker(mixIngredients) {
     mixIngredients()
+    console.log("All done!")
 }
 
 guacamoleMaker(mixIngredients)
@@ -83,15 +84,17 @@ guacamoleMaker(mixIngredients)
  * Step 4 - Invoke the "playASport" function.
  */
 
-function playSoccer() {
-    console.log("GOAL!!!")
-}
 
-function playASport(playSoccer) {
-    playSoccer()
-}
 
-playASport(playSoccer)
+function playASport() {
+    function playSoccer() {
+        console.log("GOAL!!!")
+    }
+    return playSoccer()
+}
+ 
+playASport()
+
 
 /*
  * Your code goes here
